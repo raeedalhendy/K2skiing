@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin";
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+button,
+input {
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+.section-mt {
+  margin-top: 94px;
+}
+.main-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main-title h2 {
+  font-size: 44px;
+  color: #313b4c;
+}
+span {
+  color: #de4132;
+}
+p {
+  font-size: 16px;
+  color: rgba(49, 59, 76, 0.8);
+  line-height: 1.3;
+  text-align: justify;
+}
+.container {
+  padding: 0 5.124vw;
+}
+.btn {
+  width: 155px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: #de4132;
+  color: #fff;
+}
+.btn-secondary {
+  background-color: #fff;
+  color: #de4132;
+}
+
+header nav .container,
+.skyGuides .cards,
+.Newsfeed .cards,
+.contact .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* ========================= Header =============================== */
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./../images/header-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header nav {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+header nav .container .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+header nav .container .nav-items ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header nav .container .nav-items ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+}
+header nav .container .nav-items ul li a.active {
+  color: #de4132;
+}
+header .hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: calc(100vh - 90px);
+}
+header .hero .container .hero-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+header .hero .container .hero-content h2 {
+  font-size: 64px;
+  line-height: 1.1;
+  color: #313b4c;
+}
+header .hero .container .hero-content p {
+  color: #222;
+  font-size: 18px;
+  line-height: 27px;
+}
+header .hero .container .hero-content .btns {
+  display: flex;
+  gap: 24px;
+}
+/* ================================== Logos Partners =========================== */
+.partners {
+  background-color: #fef9f9;
+  padding-block: 65px;
+}
+.partners .partners-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+/* =================================Ski & Snowboard Guides ===================== */
+.skyGuides .cards .card {
+  width: 33%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.skyGuides .cards .card img {
+  width: 100%;
+}
+.skyGuides .cards .card .card-text h3 {
+  font-size: 24px;
+  color: #313b4c;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skyGuides .cards .card .card-link {
+  color: #de4132;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+/* ============================== Explore Banner ========================== */
+.explor-Banner {
+  width: 100%;
+  height: 320px;
+  background-image: url("./../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.explor-Banner .content {
+  padding: 0 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.explor-Banner .content h2 {
+  font-size: 44px;
+  color: #fff;
+}
+.explor-Banner .content p {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+  text-align: center;
+}
+/* ============================== Newsfeed ========================== */
+.Newsfeed .cards {
+  align-items: flex-start;
+}
+.Newsfeed .main-title {
+  text-align: left;
+}
+.Newsfeed .cards .card {
+  width: 32%;
+}
+.Newsfeed .cards .card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.Newsfeed .cards .card-text {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.Newsfeed .cards h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #313b4c;
+}
+.Newsfeed .cards span {
+  font-size: 14px;
+  color: #64607d;
+}
+.Newsfeed .cards .small-options-card {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Newsfeed .cards .small-options-card .sm-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-block: 18px;
+}
+.Newsfeed .cards .small-options-card .sm-card:nth-child(1) {
+  padding-top: 0;
+}
+.Newsfeed .cards .small-options-card .sm-card:nth-child(4) {
+  border-bottom: none;
+}
+.Newsfeed .cards .small-options-card .sm-card img {
+  width: 112px;
+  border-radius: 8px;
+}
+.Newsfeed .cards .small-options-card .sm-card h2 {
+  font-size: 18px;
+}
+/* =========================== Contact ======================= */
+.contact {
+  background-color: #fef9f9;
+  padding-block: 56px;
+}
+.contact .container .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact .container .text h3 {
+  text-transform: uppercase;
+  color: #fcac1f;
+  font-size: 14px;
+}
+.contact .container .text h2 {
+  font-size: 44px;
+  color: #313b4c;
+  line-height: 1;
+}
+.contact .container form input {
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f2f3f4;
+  font-size: 16px;
+  color: #64607d;
+  margin-bottom: 16px;
+}
+::placeholder {
+  color: #64607d;
+  font-size: 16px;
+}
+/* ========================= Footer =========================== */
+footer {
+  padding: 20px 0;
+  border-top: 1px solid #e5e5ea;
+}
+footer p {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(49, 59, 76, 0.8);
+  text-align: center;
+}
